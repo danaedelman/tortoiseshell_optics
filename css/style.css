@@ -99,47 +99,80 @@ ul li{
 
 /* Icons */
 
+.supporting {
+  display: flex;
+  justify-content: center;
+}
 .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-
-}
-
-.icons {
-  display: flex;
-  height: 8rem;
-  padding-top: 3rem;
-  /* justify-content: space-between; */
-
-
-
-
-}
-.icons span {
-  display: block;
-  text-align: center;
+  margin: 3rem;
   width: 5rem;
+  height: 8rem;
+
 }
 
-.paper img {
+
+img.paper {
   width: 3.5rem;
   height: auto;
 
 }
 
-.ruler img {
+img.ruler  {
   width: 5rem;
   height: auto;
 }
 
-.truck img {
+img.truck  {
   width: 5rem;
   height: auto;
 }
 /* Information */
 
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.info-block {
+  width: 35%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+
+.background {
+  background-color: cadetblue;
+  padding: 0.5rem 4.75rem 0.5rem 1.25rem;
+  text-align: left;
+}
+
+.info-block p {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
 
 /*  Footer  */
+
+footer {
+  background-color: azure;
+}
+
+.logo-black {
+  display: flex;
+
+}
+
+.logo-black img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+}
