@@ -1,109 +1,104 @@
-/*  Universal Properties */
+/* Universal Style */
 
-html,
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: white;
+}
+
 body {
- font-family: Helvetica, sans-serif;
- font-size: 18px;
- line-height: 1.4em;
+  line-height: 1.4rem;
 
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
-  position: relative;
+  max-width: 960px;
+  margin: auto;
 }
 
-/*  Banner Section*/
-.banner {
+.flex {
+  display: flex;
+}
+
+/* Header */
+
+ header {
   background-image: url(../resources/images/glasses-bg.png);
-  height: 30rem;
-  background-position: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-}
-
-.header-bar {
- position: relative;
- top: 1rem;
- background-color: cadetblue;
- display: flex;
- justify-content: space-between;
-
+  height: 30rem;
+  padding-top: 1rem;
 
 }
 
-.company {
+/* nav */
+
+
+nav {
+  background-color: cadetblue;
+  padding: 1rem 0;
   display: flex;
-  padding-left: 2rem;
   align-items: center;
-
-}
-
-.logo img{
-  height: 1.5rem;
-
-
-}
-
-.company-name {
+  justify-content: space-between;
   color: white;
-  font-size: 1rem;
-  padding-left: 1rem;
+ }
 
-
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
 
-nav{
+nav div {
   display: flex;
+  align-items: center;
+}
 
-
+ul {
+  margin-right: 2rem;
 }
 
 ul li{
-  display: inline-block;
-  color: white;
-  position: relative;
-  padding: 1rem 2rem;
-
-
+ display: inline;
+ padding: 0 2rem;
 }
 
-
-/* copy box */
-
-.box-container {
-  width: 996px;
-  margin: 0 auto;
-  padding-top: 10rem;
-  position: relative;
-
-
+.truncated-menu {
+  display: none;
 }
+/*  banner box and copy */
 
-.copy-box {
-  background-color: white;
-  position: absolute;
-  right: 0;
+h1 {
 
-
-}
-
-.copy-box h1 {
-  font-weight: bold;
   font-size: 2rem;
+  font-weight: bold;
+  /* padding: 1.5rem 5rem; */
+  /* margin: .67em 0; */
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.main-banner {
+  background-color: white;
+  margin-top: 10rem;
+  line-height: 1.2rem;
+  display: inline-block;
+  margin-right: -2rem;
   padding: 1.5rem 5rem;
 }
 
-/*  Main Content  */
-
-
-/* Icons */
-
+/* Supporting Section */
 .supporting {
   display: flex;
   justify-content: center;
 }
-.content {
+
+
+/* service section */
+.service {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -112,67 +107,57 @@ ul li{
   margin: 3rem;
   width: 5rem;
   height: 8rem;
-
 }
 
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
 
-img.paper {
+.service img.paper-icon {
   width: 3.5rem;
-  height: auto;
-
 }
 
-img.ruler  {
-  width: 5rem;
-  height: auto;
-}
-
-img.truck  {
-  width: 5rem;
-  height: auto;
-}
-/* Information */
+/* info */
 
 .info {
-  display: flex;
-  justify-content: center;
-}
-
-.info-block {
   width: 35%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
+  margin-right: 5%;
+  margin-bottom: 4rem;
 
-
-.background {
-  background-color: cadetblue;
-  padding: 0.5rem 4.75rem 0.5rem 1.25rem;
-  text-align: left;
-}
-
-.info-block p {
-  padding-top: 1rem;
-  padding-bottom: 5rem;
-}
-
-/*  Footer  */
-
-footer {
-  background-color: azure;
-}
-
-.logo-black {
-  display: flex;
 
 }
 
-.logo-black img {
+.info p {
+  padding: 1rem 0;
+}
+
+
+
+  .title {
+    background-color: cadetblue;
+    padding: 0.5rem 1.25rem;
+    font-weight: bold;
+    color: white;
+    max-width: 10rem;
+  }
+
+
+ /* footer */
+
+ footer {
+   background-color: azure;
+   display: flex;
+   align-items: center;
+   /* padding: 4rem 2rem; */
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+   /* padding-left: 2rem; */
+   padding-right: 2rem;
+ }
+
+ footer img {
   height: 1.5rem;
-  padding: 4rem 1rem 4rem 4rem;
-}
-
-footer span {
-  display: flex;
-  align-items: center;
+  margin-left: 4rem;
+  margin-right: 1rem;
 }
